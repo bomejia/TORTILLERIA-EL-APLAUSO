@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tortillería El Aplauso</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-left">
+      <img src="logo.png" alt="Logo Tortillería El Aplauso" class="header-logo">
+      <div class="header-title">
+        <h1>TORTILLERÍA EL APLAUSO</h1>
+        <h3>Tortillas artesanales hechas con amor</h3>
+      </div>
+    </div>
+
+    <div class="header-right">
+      <button class="icon-btn" id="feedback-icon" title="Comentarios y Sugerencias">✉️</button>
+      <button class="icon-btn" id="cart-icon" title="Ver carrito">
+        🛒
+        <span class="cart-count" id="cart-count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- Quiénes somos -->
+    <section>
+      <h2>Quiénes somos</h2>
+      <p>Somos una tortillería familiar comprometida con la elaboración de tortillas artesanales de alta calidad. Cada tortilla representa nuestro esfuerzo, respeto por la tradición y amor por la cocina mexicana.</p>
+    </section>
+
+    <!-- Proceso -->
+    <section>
+      <h2>Nuestro proceso de elaboración</h2>
+      <p>Nuestro proceso inicia con la selección cuidadosa del maíz. Utilizamos técnicas tradicionales de nixtamalización que permiten conservar el sabor, aroma y valor nutricional del maíz.</p>
+      <p>Posteriormente, el nixtamal se muele diariamente y las tortillas se elaboran frescas cada día, garantizando suavidad, sabor y calidad.</p>
+    </section>
+
+    <!-- Diferenciador -->
+    <section>
+      <h2>Qué nos hace diferentes</h2>
+      <p>A diferencia de otras tortillas industriales, en Tortillería El Aplauso:</p>
+      <ul>
+        <li>Utilizamos maíz seleccionado de productores locales</li>
+        <li>No usamos conservadores artificiales</li>
+        <li>Respetamos procesos tradicionales</li>
+        <li>Elaboramos tortillas frescas todos los días</li>
+      </ul>
+    </section>
+
+    <!-- Productos y Precios -->
+    <section>
+      <h2>Nuestros Productos y Precios</h2>
+      <div class="precios">
+
+        <!-- Tortilla blanca -->
+        <div class="precio-card">
+          <div class="precio-imagen-principal">
+            <img src="https://www.kitchensanctuary.com/wp-content/uploads/2024/08/Corn-Tortillas-wide-FS-and-foodporn.jpg" alt="Tortillas blancas artesanales">
+          </div>
+          <div class="product-info">
+            <h3>Tortilla blanca</h3>
+            <p>Por cada Kilogramo</p>
+            <strong>$22 MXN</strong>
+          </div>
+          <button class="add-to-cart-btn" data-name="Tortilla blanca" data-price="22">Agregar al carrito</button>
+          <div class="precio-hover-content">
+            <div class="hover-description">Tortillas de maíz blanco nixtamalizado, suaves, flexibles y con aroma tradicional auténtico.</div>
+          </div>
+        </div>
+
+        <!-- Tortilla amarilla -->
+        <div class="precio-card">
+          <div class="precio-imagen-principal">
+            <img src="https://assets.epicurious.com/photos/60c8d097fb3029c85117191f/16:9/w_2560,c_limit/Tortillas_HERO_060921_17187.jpg" alt="Tortillas amarillas artesanales">
+          </div>
+          <div class="product-info">
+            <h3>Tortilla amarilla</h3>
+            <p>Por cada Kilogramo</p>
+            <strong>$24 MXN</strong>
+          </div>
+          <button class="add-to-cart-btn" data-name="Tortilla amarilla" data-price="24">Agregar al carrito</button>
+          <div class="precio-hover-content">
+            <div class="hover-description">Maíz amarillo natural, color intenso, sabor pronunciado, ideal para tacos y antojitos.</div>
+          </div>
+        </div>
+
+        <!-- Tortillas de harina -->
+        <div class="precio-card">
+          <div class="precio-imagen-principal">
+            <img src="https://recipeforperfection.com/wp-content/uploads/2015/06/Restaurant-Style-Flour-Tortillas.jpg" alt="Tortillas de harina frescas">
+          </div>
+          <div class="product-info">
+            <h3>Tortillas de harina</h3>
+            <p>Por cada Kilogramo</p>
+            <strong>$28 MXN</strong>
+          </div>
+          <button class="add-to-cart-btn" data-name="Tortillas de harina" data-price="28">Agregar al carrito</button>
+          <div class="precio-hover-content">
+            <div class="hover-description">Suaves, esponjosas y perfectas para burritos, quesadillas o fajitas. Hechas con amor artesanal.</div>
+          </div>
+        </div>
+
+        <!-- Totopos -->
+        <div class="precio-card">
+          <div class="precio-imagen-principal">
+            <img src="https://www.mexicoinmykitchen.com/wp-content/uploads/2025/02/Tortilla-Chips-8-500x375.jpg" alt="Totopos crujientes">
+          </div>
+          <div class="product-info">
+            <h3>Totopos</h3>
+            <p>Por cada Kilogramo</p>
+            <strong>$35 MXN</strong>
+          </div>
+          <button class="add-to-cart-btn" data-name="Totopos" data-price="35">Agregar al carrito</button>
+          <div class="precio-hover-content">
+            <div class="hover-description">Totopos crujientes hechos con nuestras tortillas frescas, ideales para nachos o botana diaria.</div>
+          </div>
+        </div>
+
+        <!-- Tortillas de nopal -->
+        <div class="precio-card">
+          <div class="precio-imagen-principal">
+            <img src="https://i0.wp.com/www.loveandharvest.com/wp-content/uploads/2022/06/nopal-tortilla.feature.png?resize=785%2C523&ssl=1" alt="Tortillas de nopal saludables">
+          </div>
+          <div class="product-info">
+            <h3>Tortillas de nopal</h3>
+            <p>Por cada Kilogramo</p>
+            <strong>$32 MXN</strong>
+          </div>
+          <button class="add-to-cart-btn" data-name="Tortillas de nopal" data-price="32">Agregar al carrito</button>
+          <div class="precio-hover-content">
+            <div class="hover-description">Saludables, verdes y nutritivas. Mezcla de nopal fresco con maíz para un sabor único y beneficioso.</div>
+          </div>
+        </div>
+
+        <!-- Masa para tortillas -->
+        <div class="precio-card">
+          <div class="precio-imagen-principal">
+            <img src="https://cuernakitchen.com/wp-content/uploads/2022/03/CE4185F5-8052-4998-B6CF-57049AC11C1B_1_105_c-e1673880030431.jpeg" alt="Masa fresca nixtamalizada">
+          </div>
+          <div class="product-info">
+            <h3>Masa para tortillas</h3>
+            <p>Por cada Kilogramo</p>
+            <strong>$20 MXN</strong>
+          </div>
+          <button class="add-to-cart-btn" data-name="Masa para tortillas" data-price="20">Agregar al carrito</button>
+          <div class="precio-hover-content">
+            <div class="hover-description">Masa molida diariamente, textura ideal para tortillas caseras o tamales.</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <h3>Contáctanos</h3>
+    <div class="contact-info">
+      <p>📞 +52 81 1234 5678 (Monterrey)</p>
+      <p>✉️ tortilleria.el-aplauso@gmail.com</p>
+    </div>
+    <p>Tradición mexicana desde nuestra cocina hasta tu mesa • Monterrey, N.L.</p>
+    <p class="copyright">Tortillería El Aplauso - Tradición desde 1967 © Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- MODALES -->
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" id="close-cart">&times;</span>
+      <h2>Tu Carrito</h2>
+      <div id="cart-items"></div>
+      <div id="cart-total">Total: $0 MXN</div>
+      <br>
+      <button id="finalize-order" class="finalize-btn">Finalizar Pedido</button>
+    </div>
+  </div>
+
+  <div id="client-form-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" id="close-form">&times;</span>
+      <h2>Finalizar tu Pedido</h2>
+      <p>Completa tus datos para registrar el pedido:</p>
+      <form id="client-form">
+        <div class="form-group">
+          <label for="client-name">Nombre completo:</label>
+          <input type="text" id="client-name" required placeholder="Ej: Juan Pérez">
+        </div>
+        <div class="form-group">
+          <label for="client-phone">Número de teléfono (WhatsApp):</label>
+          <input type="tel" id="client-phone" required placeholder="Ej: 8112345678">
+        </div>
+        <div class="delivery-option">
+          <label>¿Cómo quieres recibir tu pedido?</label><br><br>
+          <input type="radio" name="delivery" value="tienda" id="tienda" checked>
+          <label for="tienda">Recoger en tienda</label><br><br>
+          <input type="radio" name="delivery" value="domicilio" id="domicilio">
+          <label for="domicilio">Envío a domicilio</label>
+        </div>
+        <div class="form-group" id="delivery-address-group" style="display:none;">
+          <label for="client-address">Dirección completa (incluye colonia y CP):</label>
+          <input type="text" id="client-address" placeholder="Ej: Calle Ejemplo 123, Col. Centro, Monterrey, CP 64000">
+        </div>
+        <br>
+        <button type="submit" class="confirm-btn">Confirmar Pedido</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="confirmation-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" id="close-confirmation">&times;</span>
+      <h2>¡Pedido Confirmado!</h2>
+      <div class="confirmation-details" id="confirmation-details"></div>
+      <br>
+      <button onclick="document.getElementById('confirmation-modal').style.display='none'" class="close-btn">Cerrar</button>
+    </div>
+  </div>
+
+  <!-- Modal de selección de cantidad -->
+  <div id="quantity-modal" class="modal">
+    <div class="modal-content quantity-modal">
+      <span class="close-modal" id="close-quantity">&times;</span>
+      <h2 class="quantity-title">¿Cuántos kilos deseas?</h2>
+      <div class="quantity-controls">
+        <button class="quantity-btn" id="decrease">-</button>
+        <span class="quantity-display" id="quantity">1</span>
+        <button class="quantity-btn" id="increase">+</button>
+      </div>
+      <p class="quantity-price" id="total-price">$22.00 MXN</p>
+      <button class="confirm-quantity-btn" id="confirm-quantity">Añadir al carrito</button>
+    </div>
+  </div>
+
+  <!-- Modal comentarios -->
+  <div id="feedback-modal" class="modal">
+    <div class="modal-content feedback-modal">
+      <span class="close-modal" id="close-feedback">&times;</span>
+      <h2 class="feedback-title">¿Podemos mejorar?</h2>
+      <p class="feedback-text">¡Tu opinión nos importa mucho! Cuéntanos qué te gustó, qué podemos mejorar o cualquier sugerencia. 😊</p>
+
+      <form id="feedback-form">
+        <div class="form-group">
+          <label for="feedback-comments">Comentarios o sugerencias:</label>
+          <textarea id="feedback-comments" placeholder="Escribe aquí tu opinión..." required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>¿Qué tan satisfecho estás con nuestro servicio?</label>
+          <div class="rating-group">
+            <input type="radio" id="star5" name="rating" value="5" />
+            <label for="star5" title="Excelente">★</label>
+            <input type="radio" id="star4" name="rating" value="4" />
+            <label for="star4" title="Muy bueno">★</label>
+            <input type="radio" id="star3" name="rating" value="3" />
+            <label for="star3" title="Bueno">★</label>
+            <input type="radio" id="star2" name="rating" value="2" />
+            <label for="star2" title="Regular">★</label>
+            <input type="radio" id="star1" name="rating" value="1" />
+            <label for="star1" title="Malo">★</label>
+          </div>
+        </div>
+
+        <button type="submit" class="submit-feedback">Enviar Comentarios</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
